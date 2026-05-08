@@ -5,21 +5,21 @@
 class AuraTrackerGcp < Formula
   desc "MCP server exposing GCP infrastructure operations as LLM-callable tools."
   homepage "https://github.com/asbrodova/aura-tracker-gcp"
-  version "0.7.0"
+  version "0.7.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/asbrodova/aura-tracker-gcp/releases/download/v0.7.0/aura-tracker-gcp_darwin_amd64.tar.gz"
-      sha256 "4f18bd5b16c4a7c2eb6404529ca3e4f142b620e41028cd316a121e4c1358a932"
+      url "https://github.com/asbrodova/aura-tracker-gcp/releases/download/v0.7.1/aura-tracker-gcp_darwin_amd64.tar.gz"
+      sha256 "5f8629a6ac920ece0960eb132fdaa36de6be4cca8e43bf433af3767601c4d702"
 
       define_method(:install) do
         bin.install "aura-tracker-gcp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/asbrodova/aura-tracker-gcp/releases/download/v0.7.0/aura-tracker-gcp_darwin_arm64.tar.gz"
-      sha256 "7259b66201891dc51ec082556693d26d13a0af072d4866a2035dc93f06192da9"
+      url "https://github.com/asbrodova/aura-tracker-gcp/releases/download/v0.7.1/aura-tracker-gcp_darwin_arm64.tar.gz"
+      sha256 "fac3dea98e2455789d58e353b2bba2401673012a7a1a43009647189405a5b0b9"
 
       define_method(:install) do
         bin.install "aura-tracker-gcp"
@@ -29,15 +29,15 @@ class AuraTrackerGcp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/asbrodova/aura-tracker-gcp/releases/download/v0.7.0/aura-tracker-gcp_linux_amd64.tar.gz"
-      sha256 "f3ac94ad4dc323a1c9ca6cb6652c12d01f15a0d1c9d8c83d173862e6676bafa3"
+      url "https://github.com/asbrodova/aura-tracker-gcp/releases/download/v0.7.1/aura-tracker-gcp_linux_amd64.tar.gz"
+      sha256 "da8260b654904dc60a984a41dd2ed4a8dd710b70fde6b1b501d077dd09101415"
       define_method(:install) do
         bin.install "aura-tracker-gcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/asbrodova/aura-tracker-gcp/releases/download/v0.7.0/aura-tracker-gcp_linux_arm64.tar.gz"
-      sha256 "df7e2fa94f7aaa30d8313787788bd92d53e37a78fc44240eb88665922c45b0db"
+      url "https://github.com/asbrodova/aura-tracker-gcp/releases/download/v0.7.1/aura-tracker-gcp_linux_arm64.tar.gz"
+      sha256 "f986b93787dd6357c938b996cc16903eb17141418da5220f3156d9cb1082de71"
       define_method(:install) do
         bin.install "aura-tracker-gcp"
       end
